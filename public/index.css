@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Manrope', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

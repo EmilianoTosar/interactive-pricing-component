@@ -1,0 +1,23 @@
+.btn {
+  border: none;
+  font-family: inherit;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(226, 100%, 87%);
+  cursor: pointer;
+  width: 45%;
+  height: 3rem;
+  max-width: 100%;
+  font-size: 1em;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 56em) {
+  .btn {
+    width: 40%;
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 0.7em;
+  }
+}

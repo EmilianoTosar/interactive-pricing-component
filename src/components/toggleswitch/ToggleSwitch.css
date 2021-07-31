@@ -1,0 +1,128 @@
+.switch-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem 2rem;  
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3.6rem;
+  height: 1.8rem;
+  margin: 0 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 3rem;
+}
+
+.slider:hover {
+  background-color: hsl(174, 77%, 80%);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.2rem;
+  width: 1.2rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color:  hsl(174, 86%, 45%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px  hsl(174, 86%, 45%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.switch-body p {
+  color:  hsl(225, 20%, 60%);
+}
+
+.switch-body > span {
+  font-size: 0.75em;
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  border-radius: 2rem;
+  padding: 0.4rem;
+  margin-left: 0.8rem;
+}
+
+.switch-body > span > span {
+  display: none;
+}
+
+@media (min-width: 56em) {
+  .switch-body {
+    margin-top: 1rem;
+  }
+
+  .switch-body p {
+    font-size: 0.8em;
+  }
+
+  .switch {
+    width: 2.6rem;
+    height: 1.3rem;
+    margin: 0 1rem;
+  }
+
+  .slider:before {
+    height: 0.9rem;
+    width: 0.9rem;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  .switch-body > span {
+    font-size: 0.7em;
+    padding: 0.3rem;
+  }
+  
+  .switch-body > span > span {
+    display: inline;
+  }
+}
+
+

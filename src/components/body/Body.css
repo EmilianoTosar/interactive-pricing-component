@@ -1,0 +1,22 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 90%;
+  margin: 1.6rem auto 2rem;
+  border-radius: 2%;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow:    0px 10px 5px 0px rgba(50, 50, 50, 0.1);
+  box-shadow:         0px 10px 5px 0px rgba(50, 50, 50, 0.1);
+}
+
+.body hr {
+  width: 100%;
+  color: hsl(223, 50%, 87%);
+}
+
+@media (min-width: 56em) {
+  .body {
+    width: 42%;
+  }
+} 
